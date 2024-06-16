@@ -1,7 +1,7 @@
 // MODULE FOR THE LOGIC AND PROCESSING OF THE APP
 const mainController = {
     index: (req, res) => {
-        res.render('index');
+        res.render('example');
     }
 }
 
