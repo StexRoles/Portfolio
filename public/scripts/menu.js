@@ -7,6 +7,7 @@ window.addEventListener("load", function () {
     // FUNCTION TO OPEN MENU
     function openMenu() {
 
+        body.style.touchAction = 'none'; // DISABLE TOUCH
         body.classList.add('overflow-hidden'); // DISABLE SCROLLING
         menu.classList.remove('hidden'); // SHOW MENU
 
@@ -22,6 +23,7 @@ window.addEventListener("load", function () {
             menu.classList.add('hidden'); 
         }, { once: true });
         body.classList.remove('overflow-hidden'); // ENABLE SCROLLING
+        body.style.touchAction = ''; // DISABLE TOUCH
     }
 
     // CLICK ON MENU BUTTON
