@@ -1,85 +1,91 @@
 <!-- PARTIAL DEL HEAD -->
 <%- include ('./partials/head') %>
 
-<!-- PARTIAL DEL HEADER -->
-<%- include ('./partials/header') %>
-
-<main>
-    <section>
-        <article>
-            <p>Steven Navarro</p>
-            <p>Full Stack Web Developer</p>
-        </article>
-
-        <article>
-            <button>Learn more</button>
-        </article>
-
-        <article>
-            <img src="/images/github.webp" alt="github">
-            <img src="/images/linkedin.webp" alt="linkedin">
-            <img src="/images/discord.webp" alt="discord">
-            <img src="/images/gmail.webp" alt="gmail">
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <p>My tools and technologies</p>
-        </article>
-
-        <article>
-            <img src="/images/AppIcons/node.webp" alt="node icon">
-            <img src="/images/AppIcons/javascript.webp" alt="javascript icon">
-            <img src="/images/AppIcons/css.webp" alt="css icon">
-            <img src="/images/AppIcons/html.webp" alt="html icon">
-            <img src="/images/AppIcons/react.webp" alt="react icon">
-            <img src="/images/AppIcons/express-js.webp" alt="express-js icon">
-            <img src="/images/AppIcons/postgresql.webp" alt="postgresql icon">
-            <img src="/images/AppIcons/trello.webp" alt="trello icon">
-            <img src="/images/AppIcons/git.webp" alt="git icon">
-            <img src="/images/AppIcons/java.webp" alt="java icon">
-            <img src="/images/AppIcons/figma.webp" alt="figma icon">
-            <img src="/images/AppIcons/postman.webp" alt="postman icon">
-            <img src="/images/AppIcons/ejs.webp" alt="ejs icon">
-            <img src="/images/AppIcons/sequelize.webp" alt="sequelize icon">
-            <img src="/images/AppIcons/tailwind-css.webp" alt="tailwind-css icon">
-            <img src="/images/AppIcons/mysql.webp" alt="mysql icon">
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <p>Education and Experience</p>
-        </article>
-
-        <article>
-            <article>
-                <div>
-                    <img src="/images/ud.webp" alt="District University">
-                </div>
-    
-                <div>
-                    <p>Systems engineer</p>
-    
-                    <p>6th semester</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <img src="/images/dh.webp" alt="Digital House">
-                </div>
-    
-                <div>
-                    <p>Web developer full stack</p>
-    
-                    <p>Completed</p>
-                </div>
-            </article>
-        </article>
-    </section>
-</main>
+    <!-- PARTIAL DEL HEADER -->
+    <%- include ('./partials/header') %>
 
 
-<%- include ('./partials/footer') %>
+        <main>
+            <section class="h-banner bg-cover bg-center flex flex-col items-center justify-end"
+                style="background-image: url('/images/banner.webp');">
+                <article class="text-smoke-white">
+                    <p class="font-extrabold text-3xl text-center mb-9">Steven Navarro</p>
+                    <p class="text-2xl text-center mb-9">Full Stack Web Developer</p>
+                </article>
+
+                <article
+                    class="flex items-center justify-center text-smoke-white text-2xl font-extralight border-2 rounded-3xl w-56 text-center">
+                    <a href="/" class="flex-grow w-full text-center">Learn more</a>
+                </article>
+
+                <article class="flex items-center justify-between w-56 my-16">
+                    <a href="https://github.com/StexRoles" target="_blank"><img class="h-8 w-8"
+                            src="/images/github.webp" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/steven-navarro-parrales/" target="_blank"><img class="h-8 w-8"
+                            src="/images/linkedin.webp" alt="linkedin"></a>
+                    <a href="https://x.com/StexRoles?t=0_wHdwCjb_vLS7F3krZ82w&s=09" target="_blank"><img class="h-6 w-8"
+                            src="/images/twitter.webp" alt="twitter"></a>
+                    <a href="mailto:stexroles@gmail.com"><img class="h-6 w-8" src="/images/gmail.webp" alt="gmail"></a>
+                </article>
+            </section>
+
+            <section class="bg-black-body">
+                <article class="text-smoke-white font-bold text-xl text-center py-12">
+                    <p>My tools and technologies</p>
+                </article>
+
+                <article class="flex flex-wrap mx-8 justify-between">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/node.webp" alt="node icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/javascript.webp" alt="javascript icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/css.webp" alt="css icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/html.webp" alt="html icon">
+                    <img class="w-16 h-14 mb-10" src="/images/AppIcons/react.webp" alt="react icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/express-js.webp" alt="express-js icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/postgresql.webp" alt="postgresql icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/trello.webp" alt="trello icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/git.webp" alt="git icon">
+                    <img class="w-16 h-20 mb-10" src="/images/AppIcons/java.webp" alt="java icon">
+                    <img class="w-16 h-20 mb-10" src="/images/AppIcons/figma.webp" alt="figma icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/postman.webp" alt="postman icon">
+                    <img class="w-16 h-8 mb-10" src="/images/AppIcons/ejs.webp" alt="ejs icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/sequelize.webp" alt="sequelize icon">
+                    <img class="w-16 h-9 mb-10" src="/images/AppIcons/tailwind-css.webp" alt="tailwind-css icon">
+                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/mysql.webp" alt="mysql icon">
+                </article>
+
+
+                <article class="text-smoke-white font-bold text-xl text-center pb-12 pt-8">
+                    <p>Education and Experience</p>
+                </article>
+
+                <article class="mx-16 pb-4">
+                    <article class="bg-card rounded-3xl mb-14">
+                        <div class="h-44">
+                            <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl" src="/images/ud.webp"
+                                alt="District University">
+                        </div>
+
+                        <div class="text-smoke-white flex flex-col items-center">
+                            <p class="text-base font-bold my-3">Systems engineer</p>
+                            <p class="border-2 rounded-3xl px-4 mb-3">6th semester</p>
+                        </div>
+                    </article>
+
+                    <article class="bg-card rounded-3xl mb-14">
+                        <div class="h-44">
+                            <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl" src="/images/dh.webp"
+                                alt="Digital House">
+                        </div>
+
+                        <div class="text-smoke-white flex flex-col items-center">
+                            <p class="text-base font-bold my-3">Web developer full stack</p>
+                            <p class="border-2 rounded-3xl px-4 mb-3">Completed</p>
+                        </div>
+                    </article>
+                </article>
+
+            </section>
+        </main>
+
+
+        <%- include ('./partials/footer') %>
