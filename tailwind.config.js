@@ -7,9 +7,6 @@ export default {
       montserrat: ["Montserrat","sans-serif"],
     },
     extend: {
-      margin: {
-        'menu': '40vh',
-      },
       height: {
         'banner': '44rem'
       },
