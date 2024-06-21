@@ -1,19 +1,19 @@
 <body class="font-montserrat">
-    <header class="bg-black flex justify-around py-4">
+    <header class="bg-black flex justify-between py-4">
         <article>
-            <p class="font-moda text-smoke-white text-2xl mr-16">StexRoles</p>
+            <p class="font-moda text-smoke-white text-2xl ml-8 sm:mr-0">StexRoles</p>
         </article>
 
-        <nav class="hidden">
-            <ul>
+        <nav class="hidden sm:block text-smoke-white w-1/2 ml-4">
+            <ul class="flex justify-around items-center h-full text-lg font-medium">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Projects</a></li>
             </ul>
         </nav>
 
-        <nav>
-            <i class="fa-solid fa-bars text-smoke-white text-2xl ml-14" id="open-menu"></i>
+        <nav class="sm:hidden"> 
+            <i class="fa-solid fa-bars text-smoke-white text-2xl mr-8" id="open-menu"></i>
         </nav>
 
         <article class="bg-black absolute w-full h-full left-0 top-0  text-smoke-white hidden transform transition-transform duration-1000 translate-x-full" id="menu">
@@ -21,10 +21,10 @@
                 <p class="font-moda text-4xl mb-10 mt-5">StexRoles</p>
     
                 <div class="flex flex-col items-start flex-grow">
-                    <a href="/" class="text-2xl mb-10">Home</a>
-                    <a href="/about" class="text-2xl mb-10">About</a>
-                    <a href="/projects" class="text-2xl mb-10">Projects</a>
-                    <p class="text-2xl mb-10" id="close-menu">Close</p>
+                    <a href="/" class="text-2xl mb-10 font-medium">Home</a>
+                    <a href="/about" class="text-2xl mb-10 font-medium">About</a>
+                    <a href="/projects" class="text-2xl mb-10 font-medium">Projects</a>
+                    <p class="text-2xl mb-10 font-medium" id="close-menu">Close</p>
                 </div>
 
                 <p class="text-xl font-light mb-4">© Copyright 2024</p>

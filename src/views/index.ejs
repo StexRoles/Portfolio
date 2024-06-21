@@ -6,19 +6,19 @@
 
 
         <main>
-            <section class="h-banner bg-cover bg-center flex flex-col items-center justify-end"
+            <section class="h-banner bg-cover bg-center flex flex-col items-center justify-end sm:items-start sm:justify-start"
                 style="background-image: url('/images/banner.webp');">
-                <article class="text-smoke-white">
-                    <p class="font-extrabold text-3xl text-center mb-9">Steven Navarro</p>
-                    <p class="text-2xl text-center mb-9">Full Stack Web Developer</p>
+                <article class="text-smoke-white sm:ml-16 sm:mt-56">
+                    <p class="font-extrabold text-3xl text-center mb-9 sm:text-left sm:text-5xl sm:mb-3">Steven <span class="sm:block sm:mt-2">Navarro</span></p>
+                    <p class="text-2xl text-center mb-9 sm:mb-14 sm:text-lg">Full Stack Web Developer</p>
                 </article>
 
                 <article
-                    class="flex items-center justify-center text-smoke-white text-2xl font-extralight border-2 rounded-3xl w-56 text-center">
+                    class="flex items-center justify-center text-smoke-white text-2xl font-extralight border-2 rounded-3xl w-56 text-center sm:ml-16 sm:mb-36">
                     <a href="/" class="flex-grow w-full text-center">Learn more</a>
                 </article>
 
-                <article class="flex items-center justify-between w-56 my-16">
+                <article class="flex items-center justify-between w-56 my-16 sm:ml-16 sm:my-0">
                     <a href="https://github.com/StexRoles" target="_blank"><img class="h-8 w-8"
                             src="/images/github.webp" alt="github"></a>
                     <a href="https://www.linkedin.com/in/steven-navarro-parrales/" target="_blank"><img class="h-8 w-8"
@@ -30,47 +30,37 @@
             </section>
 
             <section class="bg-black-body">
-                <article class="text-smoke-white font-bold text-xl text-center py-12">
+                <article class="text-smoke-white font-bold text-xl text-center py-12 sm:text-3xl">
                     <p>My tools and technologies</p>
                 </article>
 
-                <article class="flex flex-wrap mx-8 justify-between">
+                <article class="flex flex-wrap mx-8 justify-between sm:mx-20">
                     <% technologies.forEach(item => { %>
-                        <div class="mb-10 w-1/5 mx-2 flex items-center">
+                        <div class="mb-12 w-1/5 mx-1 flex items-center p-3 sm:p-6">
                             <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %>">
                         </div>
                     <% }) %>
                 </article>
 
 
-                <article class="text-smoke-white font-bold text-xl text-center pb-12 pt-8">
+                <article class="text-smoke-white font-bold text-xl text-center pb-12 pt-8 sm:text-3xl">
                     <p>Education and Experience</p>
                 </article>
 
-                <article class="mx-16 pb-4">
-                    <article class="bg-card rounded-3xl mb-14">
-                        <div class="h-44">
-                            <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl" src="/images/ud.webp"
-                                alt="District University">
-                        </div>
-
-                        <div class="text-smoke-white flex flex-col items-center">
-                            <p class="text-base font-bold my-3">Systems engineer</p>
-                            <p class="border-2 rounded-3xl px-4 mb-3">6th semester</p>
-                        </div>
-                    </article>
-
-                    <article class="bg-card rounded-3xl mb-14">
-                        <div class="h-44">
-                            <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl" src="/images/dh.webp"
-                                alt="Digital House">
-                        </div>
-
-                        <div class="text-smoke-white flex flex-col items-center">
-                            <p class="text-base font-bold my-3">Web developer full stack</p>
-                            <p class="border-2 rounded-3xl px-4 mb-3">Completed</p>
-                        </div>
-                    </article>
+                <article class="mx-[20%] pb-4 flex flex-wrap h-full sm:justify-between sm:mx-[15%]">
+                    <% education.forEach(item => { %>
+                        <article class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%]">
+                            <div class="h-2/3 w-full">
+                                <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl" src="/images/<%= item.image %>"
+                                    alt="<%= item.institution %>">
+                            </div>
+    
+                            <div class="text-smoke-white flex flex-col items-center h-2/6">
+                                <p class="text-base font-bold my-3"><%= item.title %></p>
+                                <p class="border-2 rounded-3xl px-4 mb-3"><%= item.status %></p>
+                            </div>
+                        </article>
+                    <% }) %>
                 </article>
 
             </section>

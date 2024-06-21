@@ -12,10 +12,15 @@ const __dirname = dirname(__filename);
 const mainController = {
     index: (req, res) => {
 
+        // DATA OF TECHNOLOGIES
         let technologiesPath = path.join(__dirname, '..', 'model', 'technologies.json');
         let technologies = JSON.parse(fs.readFileSync(technologiesPath, "utf-8"));
 
-        res.render('index', {technologies});
+        // DATA OF EDUCATION
+        let educationPath = path.join(__dirname, '..', 'model', 'education.json');
+        let education = JSON.parse(fs.readFileSync(educationPath, "utf-8"));
+
+        res.render('index', {technologies, education});
 
     }
 }
