@@ -8,7 +8,7 @@ export default {
     },
     extend: {
       margin: {
-        'menu': '22rem',
+        'menu': '40vh',
       },
       height: {
         'banner': '44rem'

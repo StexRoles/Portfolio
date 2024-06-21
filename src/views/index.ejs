@@ -35,22 +35,11 @@
                 </article>
 
                 <article class="flex flex-wrap mx-8 justify-between">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/node.webp" alt="node icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/javascript.webp" alt="javascript icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/css.webp" alt="css icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/html.webp" alt="html icon">
-                    <img class="w-16 h-14 mb-10" src="/images/AppIcons/react.webp" alt="react icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/express-js.webp" alt="express-js icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/postgresql.webp" alt="postgresql icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/trello.webp" alt="trello icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/git.webp" alt="git icon">
-                    <img class="w-16 h-20 mb-10" src="/images/AppIcons/java.webp" alt="java icon">
-                    <img class="w-16 h-20 mb-10" src="/images/AppIcons/figma.webp" alt="figma icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/postman.webp" alt="postman icon">
-                    <img class="w-16 h-8 mb-10" src="/images/AppIcons/ejs.webp" alt="ejs icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/sequelize.webp" alt="sequelize icon">
-                    <img class="w-16 h-9 mb-10" src="/images/AppIcons/tailwind-css.webp" alt="tailwind-css icon">
-                    <img class="w-16 h-16 mb-10" src="/images/AppIcons/mysql.webp" alt="mysql icon">
+                    <% technologies.forEach(item => { %>
+                        <div class="mb-10 w-1/5 mx-2 flex items-center">
+                            <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %>">
+                        </div>
+                    <% }) %>
                 </article>
 
 

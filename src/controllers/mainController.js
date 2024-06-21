@@ -1,7 +1,22 @@
+import fs from 'fs';
+import path from 'path';
+
+// SETTINGS TO USE dirname
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 // MODULE FOR THE LOGIC AND PROCESSING OF THE APP
 const mainController = {
     index: (req, res) => {
-        res.render('index');
+
+        let technologiesPath = path.join(__dirname, '..', 'model', 'technologies.json');
+        let technologies = JSON.parse(fs.readFileSync(technologiesPath, "utf-8"));
+
+        res.render('index', {technologies});
+
     }
 }
 

@@ -566,12 +566,20 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .left-0{
   left: 0px;
 }
 
 .top-0{
   top: 0px;
+}
+
+.bottom-4{
+  bottom: 1rem;
 }
 
 .mx-10{
@@ -602,6 +610,11 @@ video {
 .my-9{
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-10{
@@ -637,11 +650,23 @@ video {
 }
 
 .mt-menu{
-  margin-top: 22rem;
+  margin-top: 40vh;
+}
+
+.mb-28{
+  margin-bottom: 7rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .flex{
   display: flex;
+}
+
+.table{
+  display: table;
 }
 
 .hidden{
@@ -680,8 +705,16 @@ video {
   height: 44rem;
 }
 
+.h-dvh{
+  height: 100dvh;
+}
+
 .h-full{
   height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-16{
@@ -696,8 +729,20 @@ video {
   width: 2rem;
 }
 
+.w-dvw{
+  width: 100dvw;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-1\/4{
+  width: 25%;
+}
+
+.w-1\/5{
+  width: 20%;
 }
 
 .flex-grow{
@@ -743,10 +788,6 @@ video {
 
 .justify-around{
   justify-content: space-around;
-}
-
-.overflow-hidden{
-  overflow: hidden;
 }
 
 .rounded-3xl{
@@ -904,8 +945,4 @@ video {
 
 .duration-1000{
   transition-duration: 1000ms;
-}
-
-.duration-75{
-  transition-duration: 75ms;
 }

@@ -1,0 +1,82 @@
+[
+    {   
+        "id": 1,
+        "name": "node",
+        "image": "node.webp"  
+    },
+    {
+        "id": 2,
+        "name": "js",
+        "image": "javascript.webp" 
+    },
+    {
+        "id": 3,
+        "name": "css",
+        "image": "css.webp"  
+    },
+    {
+        "id": 4,
+        "name": "html",
+        "image": "html.webp"  
+    },
+    {
+        "id": 5,
+        "name": "react",
+        "image": "react.webp"  
+    },
+    {
+        "id": 6,
+        "name": "express",
+        "image": "express-js.webp"  
+    },
+    {
+        "id": 7,
+        "name": "postgresql",
+        "image": "postgresql.webp"  
+    },
+    {
+        "id": 8,
+        "name": "trello",
+        "image": "trello.webp"
+    },
+    {
+        "id": 9,
+        "name": "git",
+        "image": "git.webp"  
+    },
+    {
+        "id": 10,
+        "name": "java",
+        "image": "java.webp"  
+    },
+    {
+        "id": 11,
+        "name": "figma",
+        "image": "figma.webp"  
+    },
+    {
+        "id": 12,
+        "name": "postman",
+        "image": "postman.webp"  
+    },
+    {
+        "id": 13,
+        "name": "ejs",
+        "image": "ejs.webp"
+    },
+    {
+        "id": 14,
+        "name": "sequelize",
+        "image": "sequelize.webp"
+    },
+    {
+        "id": 15,
+        "name": "tailwind-css",
+        "image": "tailwind-css.webp"
+    },
+    {
+        "id": 16,
+        "name": "mysql",
+        "image": "mysql.webp"
+    }
+]
