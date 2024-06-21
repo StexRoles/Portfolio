@@ -8,17 +8,17 @@
         <main>
             <section class="h-banner bg-cover bg-center flex flex-col items-center justify-end sm:items-start sm:justify-start"
                 style="background-image: url('/images/banner.webp');">
-                <article class="text-smoke-white sm:ml-16 sm:mt-56">
-                    <p class="font-extrabold text-3xl text-center mb-9 sm:text-left sm:text-5xl sm:mb-3">Steven <span class="sm:block sm:mt-2">Navarro</span></p>
-                    <p class="text-2xl text-center mb-9 sm:mb-14 sm:text-lg">Full Stack Web Developer</p>
+                <article class="text-smoke-white sm:ml-16 sm:mt-56 lg:ml-20">
+                    <p class="font-extrabold text-3xl text-center mb-9 sm:text-left sm:text-5xl sm:mb-3 lg:text-[3.5rem]">Steven <span class="sm:block sm:mt-2">Navarro</span></p>
+                    <p class="text-2xl text-center mb-9 sm:mb-14 sm:text-lg lg:text-2xl">Full Stack Web Developer</p>
                 </article>
 
                 <article
-                    class="flex items-center justify-center text-smoke-white text-2xl font-extralight border-2 rounded-3xl w-56 text-center sm:ml-16 sm:mb-36">
-                    <a href="/" class="flex-grow w-full text-center">Learn more</a>
+                    class="flex items-center justify-center text-smoke-white text-2xl font-extralight border-2 rounded-3xl w-56 text-center sm:ml-16 sm:mb-36 lg:ml-20 lg:w-[230px] lg:mb-28">
+                    <a href="/CLASE 6.pdf" target="_blank" class="flex-grow w-full text-center">Learn more</a>
                 </article>
 
-                <article class="flex items-center justify-between w-56 my-16 sm:ml-16 sm:my-0">
+                <article class="flex items-center justify-between w-56 my-16 sm:ml-16 sm:my-0 lg:ml-20">
                     <a href="https://github.com/StexRoles" target="_blank"><img class="h-8 w-8"
                             src="/images/github.webp" alt="github"></a>
                     <a href="https://www.linkedin.com/in/steven-navarro-parrales/" target="_blank"><img class="h-8 w-8"
@@ -34,9 +34,9 @@
                     <p>My tools and technologies</p>
                 </article>
 
-                <article class="flex flex-wrap mx-8 justify-between sm:mx-20">
+                <article class="flex flex-wrap mx-[10%] justify-between sm:mx-[15%] lg:mx-[20%]">
                     <% technologies.forEach(item => { %>
-                        <div class="mb-12 w-1/5 mx-1 flex items-center p-3 sm:p-6">
+                        <div class="mb-12 w-1/5 mx-1 flex items-center p-[3%] sm:p-[4%] lg:p-[5%]">
                             <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %>">
                         </div>
                     <% }) %>
@@ -47,16 +47,16 @@
                     <p>Education and Experience</p>
                 </article>
 
-                <article class="mx-[20%] pb-4 flex flex-wrap h-full sm:justify-between sm:mx-[15%]">
+                <article class="mx-[22%] pb-4 flex flex-wrap h-full sm:justify-between sm:mx-[15%] lg:mx-[25%]">
                     <% education.forEach(item => { %>
-                        <article class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%]">
+                        <article class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%] lg:w-[40%]">
                             <div class="h-2/3 w-full">
                                 <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl" src="/images/<%= item.image %>"
                                     alt="<%= item.institution %>">
                             </div>
     
                             <div class="text-smoke-white flex flex-col items-center h-2/6">
-                                <p class="text-base font-bold my-3"><%= item.title %></p>
+                                <p class="text-base font-bold my-3 text-center"><%= item.title %></p>
                                 <p class="border-2 rounded-3xl px-4 mb-3"><%= item.status %></p>
                             </div>
                         </article>
