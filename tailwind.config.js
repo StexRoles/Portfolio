@@ -3,8 +3,8 @@ export default {
   content: ["./src/**/*.{html,js,ejs}"],
   theme: {
     fontFamily: {
-      moda: ["Bodoni Moda","sans-serif"],
-      montserrat: ["Montserrat","sans-serif"],
+      moda: ["Bodoni Moda", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {
       height: {
@@ -17,12 +17,22 @@ export default {
       },
       keyframes: {
         shimmer: {
-          '0%, 100%': { backgroundPosition: '200% center'},
-          '50%': { backgroundPosition: '-100% center'},
-        }
+          '0%, 100%': { backgroundPosition: '200% center' },
+          '50%': { backgroundPosition: '-100% center' },
+        },
+        slideInDown: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideOutUp: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(-100%)', opacity: '0' },
+        },
       },
       animation: {
-        shimmer: 'shimmer 10s linear infinite'
+        shimmer: 'shimmer 10s linear infinite',
+        slideInDown: 'slideInDown 2s forwards',
+        slideOutUp: 'slideOutUp 2s forwards',
       },
       backgroundImage: {
         'shimmer': 'linear-gradient(90deg, rgba(242,243,244,1) 0%, rgba(242,243,244,1) 25%, rgba(133,146,158,1) 50%, rgba(242,243,244,1) 74%, rgba(242,243,244,1) 100%)',

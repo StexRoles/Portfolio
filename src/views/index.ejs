@@ -23,13 +23,16 @@
                 </article>
 
                 <article class="flex items-center justify-between w-56 my-16 sm:ml-16 sm:my-0 lg:ml-20">
-                    <a href="https://github.com/StexRoles" target="_blank" class="hover:scale-110 transition-all"><img class="h-8 w-8"
-                            src="/images/github.webp" alt="github"></a>
-                    <a href="https://www.linkedin.com/in/steven-navarro-parrales/" target="_blank" class="hover:scale-110 transition-all"><img class="h-8 w-8"
-                            src="/images/linkedin.webp" alt="linkedin"></a>
-                    <a href="https://x.com/StexRoles?t=0_wHdwCjb_vLS7F3krZ82w&s=09" target="_blank" class="hover:scale-110 transition-all"><img class="h-6 w-8"
-                            src="/images/twitter.webp" alt="twitter"></a>
-                    <a href="mailto:stexroles@gmail.com"><img class="h-6 w-8 hover:scale-110 transition-all" src="/images/gmail.webp" alt="gmail"></a>
+                    <a href="https://github.com/StexRoles" target="_blank" class="hover:scale-110 transition-all"><img
+                            class="h-8 w-8" src="/images/github.webp" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/steven-navarro-parrales/" target="_blank"
+                        class="hover:scale-110 transition-all"><img class="h-8 w-8" src="/images/linkedin.webp"
+                            alt="linkedin"></a>
+                    <a href="https://x.com/StexRoles?t=0_wHdwCjb_vLS7F3krZ82w&s=09" target="_blank"
+                        class="hover:scale-110 transition-all"><img class="h-6 w-8" src="/images/twitter.webp"
+                            alt="twitter"></a>
+                    <a href="mailto:stexroles@gmail.com"><img class="h-6 w-8 hover:scale-110 transition-all"
+                            src="/images/gmail.webp" alt="gmail"></a>
                 </article>
             </section>
 
@@ -40,16 +43,25 @@
 
                 <article class="flex flex-wrap mx-[10%] justify-between sm:mx-[15%] lg:mx-[20%]">
                     <% technologies.forEach(item=> { %>
-                        <div class="mb-12 w-1/5 mx-1 flex flex-col justify-between items-center p-[3%] sm:p-[4%] lg:p-[5%] hover:scale-110 transition-all relative icon-container lg:justify-center">
+                        <div
+                            class="mb-12 w-1/5 mx-1 flex flex-col justify-between items-center p-[3%] sm:p-[4%] lg:p-[5%] hover:scale-110 transition-all relative icon-container lg:justify-center">
                             <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %> icon">
-                            <p class="text-smoke-white text-sm font-semibold sm:text-base lg:hidden"><%= item.name %></p>
+                            <p class="text-smoke-white text-sm font-semibold sm:text-base lg:hidden">
+                                <%= item.name %>
+                            </p>
 
-                            <div class="h-72 w-72 bg-slate-500 rounded-2xl absolute bottom-[85%] icon-modal hidden flex-col items-center p-[15%]">
-                                <div class="w-1/3">
-                                    <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %> icon">
+                            <div
+                                class="h-72 w-72 bg-slate-500 rounded-2xl absolute bottom-[85%] icon-modal hidden flex-col items-center p-[15%]">
+                                <div class="w-1/3 icon-image">
+                                    <img class="w-full" src="/images/AppIcons/<%= item.image %>"
+                                        alt="<%= item.name %> icon">
                                 </div>
-                                <p class="text-2xl text-smoke-white font-bold my-6"><%= item.title %></p>
-                                <p class="text-smoke-white font-bold break-words text-xs"><%= item.description %></p>
+                                <p class="text-2xl text-smoke-white font-bold my-6 icon-title">
+                                    <%= item.title %>
+                                </p>
+                                <p class="text-smoke-white font-bold break-words text-xs icon-description">
+                                    <%= item.description %>
+                                </p>
                             </div>
                         </div>
                         <% }) %>
@@ -62,7 +74,8 @@
 
                 <article class="mx-[22%] pb-4 flex flex-wrap h-full sm:justify-between sm:mx-[15%] lg:mx-[25%]">
                     <% education.forEach(item=> { %>
-                        <article class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%] lg:w-[40%] shadow-xl shadow-slate-100/30 hover:scale-105 transition-all">
+                        <article
+                            class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%] lg:w-[40%] shadow-xl shadow-slate-100/30 hover:scale-105 transition-all">
                             <div class="h-2/3 w-full">
                                 <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl"
                                     src="/images/<%= item.image %>" alt="<%= item.institution %>">
@@ -84,5 +97,6 @@
         </main>
 
         <script src="/scripts/techModal.js"></script>
+        <script src="/scripts/techNotification.js"></script>
 
         <%- include ('./partials/footer') %>
