@@ -13,7 +13,7 @@ export default {
       colors: {
         'black-body': '#141313',
         'smoke-white': '#F2F3F4',
-        'card': '#566573'
+        'card': '#566573',
       },
       keyframes: {
         shimmer: {

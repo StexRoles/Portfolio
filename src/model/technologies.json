@@ -2,81 +2,113 @@
     {   
         "id": 1,
         "name": "node",
-        "image": "node.webp"  
+        "image": "node.webp",
+        "title": "Node.js",
+        "description": "I use Node.js as a runtime environment for JavaScript on the backend. This allows me to create fast and efficient applications." 
     },
     {
         "id": 2,
         "name": "js",
-        "image": "javascript.webp" 
+        "image": "javascript.webp",
+        "title": "JavaScript",
+        "description": "I use JavaScript to add interactivity to web pages, including drop-down menus and form validation." 
     },
     {
         "id": 3,
         "name": "css",
-        "image": "css.webp"  
+        "image": "css.webp",
+        "title": "CSS",
+        "description": "I use CSS to design and style web pages, ensuring they are attractive and easy to use."  
     },
     {
         "id": 4,
         "name": "html",
-        "image": "html.webp"  
+        "image": "html.webp",
+        "title": "HTML5",
+        "description": "I use HTML to structure the content of web pages, including elements such as headings, paragraphs, and lists." 
     },
     {
         "id": 5,
         "name": "react",
-        "image": "react.webp"  
+        "image": "react.webp",
+        "title": "React.js",
+        "description": "I use React to build dynamic and reusable user interfaces in my web applications."   
     },
     {
         "id": 6,
         "name": "express",
-        "image": "express-js.webp"  
+        "image": "express-js.webp",
+        "title": "Express.js",
+        "description": "I use Express.js as a framework to develop web applications in Node.js, accelerating backend development and the creation of RESTful APIs."   
     },
     {
         "id": 7,
         "name": "postgresql",
-        "image": "postgresql.webp"  
+        "image": "postgresql.webp",
+        "title": "PostgreSql",
+        "description": "I use PostgreSQL as a relational database in my web applications, guaranteeing efficiency and security in data manipulation."   
     },
     {
         "id": 8,
         "name": "trello",
-        "image": "trello.webp"
-    },
-    {
-        "id": 9,
-        "name": "git",
-        "image": "git.webp"  
-    },
-    {
-        "id": 10,
-        "name": "java",
-        "image": "java.webp"  
-    },
-    {
-        "id": 11,
-        "name": "figma",
-        "image": "figma.webp"  
-    },
-    {
-        "id": 12,
-        "name": "postman",
-        "image": "postman.webp"  
-    },
-    {
-        "id": 13,
-        "name": "ejs",
-        "image": "ejs.webp"
-    },
-    {
-        "id": 14,
-        "name": "sequelize",
-        "image": "sequelize.webp"
+        "image": "trello.webp",
+        "title": "Trello",
+        "description": "I use Trello as an agile project management tool to organize tasks and collaborate with teams effectively." 
     },
     {
         "id": 15,
         "name": "tailwindcss",
-        "image": "tailwind-css.webp"
+        "image": "tailwind-css.webp",
+        "title": "Tailwind CSS",
+        "description": "I use Tailwind CSS to design modern, customizable user interfaces using predefined classes." 
+    },
+    {
+        "id": 10,
+        "name": "java",
+        "image": "java.webp",
+        "title": "Java",
+        "description": "I use Java to develop robust and scalable business applications and backend systems."   
+    },
+    {
+        "id": 11,
+        "name": "figma",
+        "image": "figma.webp",
+        "title": "Figma",
+        "description": "I use Figma as a UI design and prototyping tool to create coherent and engaging experiences."   
+    },
+    {
+        "id": 12,
+        "name": "postman",
+        "image": "postman.webp",
+        "title": "Postman",
+        "description": "I use Postman as an API client to test, develop and document web services in my projects."   
+    },
+    {
+        "id": 13,
+        "name": "ejs",
+        "image": "ejs.webp",
+        "title": "EJS",
+        "description": "I use EJS as a templating engine in Node.js to generate dynamic views with a mix of HTML and JavaScript." 
+    },
+    {
+        "id": 14,
+        "name": "sequelize",
+        "image": "sequelize.webp",
+        "title": "Sequelize ORM",
+        "description": "I use Sequelize as an ORM in Node.js to interact with relational databases in an intuitive and efficient way." 
+    },
+    {
+        "id": 9,
+        "name": "git",
+        "image": "git.webp",
+        "title": "Git & GitHub",
+        "description": "I use Git for version control and GitHub to host and collaborate on my web projects, making it easy to manage changes and collaborate with other developers."   
     },
     {
         "id": 16,
         "name": "mysql",
-        "image": "mysql.webp"
+        "image": "mysql.webp",
+        "title": "MySql",
+        "description": "I use MySQL as a database management system in my web projects, guaranteeing efficiency and security in data manipulation." 
     }
 ]
