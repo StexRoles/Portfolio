@@ -40,8 +40,9 @@
 
                 <article class="flex flex-wrap mx-[10%] justify-between sm:mx-[15%] lg:mx-[20%]">
                     <% technologies.forEach(item=> { %>
-                        <div class="mb-12 w-1/5 mx-1 flex items-center p-[3%] sm:p-[4%] lg:p-[5%]">
-                            <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %>">
+                        <div class="mb-12 w-1/5 mx-1 flex flex-col justify-between items-center p-[3%] sm:p-[4%] lg:p-[5%]">
+                            <img class="w-full" src="/images/AppIcons/<%= item.image %>" alt="<%= item.name %> icon">
+                            <p class="text-smoke-white text-sm font-semibold sm:text-base lg:hidden"><%= item.name %></p>
                         </div>
                         <% }) %>
                 </article>
@@ -53,7 +54,7 @@
 
                 <article class="mx-[22%] pb-4 flex flex-wrap h-full sm:justify-between sm:mx-[15%] lg:mx-[25%]">
                     <% education.forEach(item=> { %>
-                        <article class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%] lg:w-[40%]">
+                        <article class="bg-card rounded-3xl mb-14 w-full h-80 sm:w-[45%] lg:w-[40%] shadow-xl shadow-slate-100/30">
                             <div class="h-2/3 w-full">
                                 <img class="h-full w-full object-cover rounded-tl-3xl rounded-tr-3xl"
                                     src="/images/<%= item.image %>" alt="<%= item.institution %>">
