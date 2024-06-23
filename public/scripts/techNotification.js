@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
         modal.className = "fixed icon-notification z-10 top-0 p-4 w-full flex justify-center animate-slideInDown"; 
         modal.innerHTML = `
             <div class="w-[90%] bg-slate-500 rounded-xl flex items-center justify-between p-[3%] max-w-[28rem]">
-                <div class="notification-image w-1/5 sm:w-1/6">
+                <div class="notification-image w-1/5">
                     <img src="${imageSrc}" alt="">
                 </div>
 

@@ -43,5 +43,16 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    'fixed',
+    'z-10',
+    'p-4',
+    'animate-slideInDown',
+    'animate-slideOutUp',
+    'w-[90%]',
+    'max-w-[28rem]',
+    'rounded-xl',
+    'w-3/4',
+  ],
 }
 
