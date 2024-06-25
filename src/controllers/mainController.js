@@ -22,6 +22,18 @@ const mainController = {
 
         res.render('index', {technologies, education});
 
+    },
+    about: (req, res) => {
+
+        // DATA OF SERVICES
+        let servicesPath = path.join(__dirname, '..', 'model', 'services.json');
+        let services = JSON.parse(fs.readFileSync(servicesPath, "utf-8"));
+
+        // DATA OF HOBBIES
+        let hobbiesPath = path.join(__dirname, '..', 'model', 'hobbies.json');
+        let hobbies = JSON.parse(fs.readFileSync(hobbiesPath, "utf-8"));
+
+        res.render('about', {services, hobbies});
     }
 }
 

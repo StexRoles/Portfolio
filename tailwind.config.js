@@ -14,6 +14,8 @@ export default {
         'black-body': '#141313',
         'smoke-white': '#F2F3F4',
         'card': '#566573',
+        'purple-about': '#5900CA',
+        'dark-gray': '#1E1E1E'
       },
       keyframes: {
         shimmer: {
@@ -36,10 +38,14 @@ export default {
       },
       backgroundImage: {
         'shimmer': 'linear-gradient(90deg, rgba(242,243,244,1) 0%, rgba(242,243,244,1) 25%, rgba(133,146,158,1) 50%, rgba(242,243,244,1) 74%, rgba(242,243,244,1) 100%)',
+        'black-to-purple': 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(83,7,175,1) 60%, rgba(170,81,255,1) 100%)'
       },
       backgroundSize: {
         'shimmer-size': '200% 100%',
       },
+      dropShadow: {
+        'icon': '0 0px 15px rgba(255, 255, 255, 0.4)',
+      }
     },
   },
   plugins: [],
@@ -52,7 +58,8 @@ export default {
     'w-[90%]',
     'max-w-[28rem]',
     'rounded-xl',
-    'w-3/4',
+    'w-4/5',
+    'w-[15%]'
   ],
 }
 

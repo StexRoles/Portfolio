@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "fa-solid fa-pencil",
+        "title": "Creative Desing",
+        "description": "I create eye-catching and aesthetic web designs, using layout tools like Figma."
+    },
+    {
+        "icon": "fa-solid fa-user-astronaut",
+        "title": "User Interface",
+        "description": "I create web pages that are intuitive and easy to use for the user, as well as having an adaptive design for different devices."
+    },
+    {
+        "icon": "fa-solid fa-code",
+        "title": "Clean Code",
+        "description": "I generate clean and scalable code, using good development and documentation practices."
+    },
+    {
+        "icon": "fa-solid fa-laptop",
+        "title": "Front-end",
+        "description": "I create user-side pages that adapt to both aesthetics and functionality."
+    },
+    {
+        "icon": "fa-solid fa-server",
+        "title": "Back-end",
+        "description": "I created the server side functionalities such as validations, routing system and API creation."
+    },
+    {
+        "icon": "fa-solid fa-database",
+        "title": "Database",
+        "description": "Logically structured database model to determine how to store, organize and manipulate data."
+    }
+]

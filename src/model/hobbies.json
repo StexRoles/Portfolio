@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "fa-solid fa-dragon",
+        "title": "Watch anime",
+        "description": "It helps me improve my creativity and explore imaginative stories and worlds."
+    },
+    {
+        "icon": "fa-solid fa-gamepad",
+        "title": "Play videogames",
+        "description": "It helps me relax and have fun, in addition to improving my coordination and problem solving."
+    },
+    {
+        "icon": "fa-solid fa-dumbbell",
+        "title": "Go to gym",
+        "description": "I improve my physical condition, increase my energy and reduce stress."
+    }
+]

@@ -10,6 +10,9 @@ import mainController from '../controllers/mainController.js';
 // ROUTE FROM THE MAIN PAGE
 router.get('/', mainController.index);
 
+// ROUTE FROM THE ABOUT PAGE
+router.get('/about', mainController.about);
+
 
 //---------------------------------------------------------------//
 // EXPORT ROUTER

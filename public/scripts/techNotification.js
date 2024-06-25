@@ -13,12 +13,12 @@ window.addEventListener("load", function () {
         modal.className = "fixed icon-notification z-10 top-0 p-4 w-full flex justify-center animate-slideInDown"; 
         modal.innerHTML = `
             <div class="w-[90%] bg-slate-500 rounded-xl flex items-center justify-between p-[3%] max-w-[28rem]">
-                <div class="notification-image w-1/5">
-                    <img src="${imageSrc}" alt="">
+                <div class="notification-image w-[15%]">
+                    <img class="drop-shadow-xl" src="${imageSrc}" alt="icon notification">
                 </div>
 
-                <div class="w-3/4">
-                    <p class="notification-title text-smoke-white font-bold m-0">${title}</p>
+                <div class="w-4/5">
+                    <p class="notification-title text-smoke-white font-semibold">${title}</p>
                     <p class="notification-description text-smoke-white break-words text-xs">${description}</p>
                 </div>
             </div>
@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
         // CLOSE AND REMOVE THE MODAL AFTER 3 SECONDS
         setTimeout(function() {
             modal.classList.replace('animate-slideInDown', 'animate-slideOutUp');
-            setTimeout(() => modal.remove(), 1000); // Ajusta este tiempo al de tu animación de salida
+            setTimeout(() => modal.remove(), 1000); 
         }, 3000);
     }
 
