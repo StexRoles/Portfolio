@@ -44,7 +44,9 @@ export default {
         'shimmer-size': '200% 100%',
       },
       dropShadow: {
-        'icon': '0 0px 15px rgba(255, 255, 255, 0.4)',
+        'avatar': '0 12px 15px rgba(255, 255, 255, 0.4)',
+        'button': '0 8px 15px rgba(255, 255, 255, 0.4)',
+        'card': '0 12px 15px rgba(255, 255, 255, 0.4)',
       }
     },
   },
