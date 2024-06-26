@@ -5,53 +5,55 @@
     <%- include ('./partials/header') %>
 
 
-        <main class="bg-black-to-purple px-9">
+        <main class="bg-black-to-purple px-9 lg:px-20">
             <article class="py-6 w-full">
-                <p class="text-center text-2xl font-black  text-smoke-white">About me</p>
+                <p class="text-center text-2xl font-black  text-smoke-white lg:text-3xl">About me</p>
             </article>
 
-            <section class="flex flex-col items-center">
+            <section class="flex flex-col items-center sm:flex-row sm:justify-around">
                 <article
-                    class="relative h-auto w-64 rounded-bl-full rounded-br-full overflow-hidden flex flex-col items-center mb-8">
-                    <article class="bg-purple-about rounded-full h-64 w-64 mt-10"></article>
+                    class="relative h-auto w-64 rounded-bl-full rounded-br-full overflow-hidden flex flex-col items-center mb-8 sm:w-56 lg:w-72">
+                    <article class="bg-purple-about rounded-full h-64 w-64 mt-10 sm:w-56 sm:h-56 lg:w-72 lg:h-72"></article>
 
-                    <img class="absolute top-4 h-72 object-cover" src="/images/avatar.webp" alt="Avatar">
+                    <img class="absolute top-4 h-72 object-cover lg:h-[22rem]" src="/images/avatar.webp" alt="Avatar">
                 </article>
 
-                <article class="text-smoke-white w-full">
-                    <p class="font-extrabold text-center mb-5">I'm Steven, a systems engineer and full stack web
-                        developer.</p>
-
-                    <p class="text-sm font-medium">I consider myself a person determined to move forward, ready to solve
-                        challenges and build my own
-                        path, becoming better every day and learning more from my mistakes than from my successes. Since
-                        I was a child I have been interested in technology and in addition to my professional career, I
-                        am interested in the world of web development, a world where my job is to make imagination come
-                        true.</p>
-
-                    <div class="h-[1px] bg-smoke-white my-5"></div>
-                </article>
-
-                <article class="text-smoke-white w-full mb-5">
-                    <p><span class="font-bold">Age:</span> 20</p>
-                    <p><span class="font-bold">Tel:</span> +57 3016288659</p>
-                    <p><span class="font-bold">From:</span> Bogotá, Colombia</p>
-                </article>
-
-                <article
-                    class="flex items-center justify-center bg-purple-about h-10 w-60 rounded-full text-smoke-white">
-                    <a href="/docs/Steven_Navarro_CV.pdf" target="_blank"
-                        class="font-extrabold flex-grow w-full text-center">Download CV</a>
+                <article class="flex flex-col items-center sm:w-1/2">
+                    <article class="text-smoke-white w-full">
+                        <p class="font-extrabold text-center mb-5 sm:text-start lg:text-xl">I'm Steven, a systems engineer and full stack web
+                            developer.</p>
+    
+                        <p class="text-sm font-medium lg:text-base">I consider myself a person determined to move forward, ready to solve
+                            challenges and build my own
+                            path, becoming better every day and learning more from my mistakes than from my successes. Since
+                            I was a child I have been interested in technology and in addition to my professional career, I
+                            am interested in the world of web development, a world where my job is to make imagination come
+                            true.</p>
+    
+                        <div class="h-[1px] bg-smoke-white my-5 lg:my-7"></div>
+                    </article>
+    
+                    <article class="text-smoke-white w-full mb-5 lg:flex lg:justify-between lg:text-lg lg:mb-7">
+                        <p><span class="font-bold">Age:</span> 20</p>
+                        <p><span class="font-bold">Tel:</span> +57 3016288659</p>
+                        <p><span class="font-bold">From:</span> Bogotá, Colombia</p>
+                    </article>
+    
+                    <article
+                        class="flex items-center justify-center bg-purple-about h-10 w-60 rounded-full text-smoke-white lg:h-12">
+                        <a href="/docs/Steven_Navarro_CV.pdf" target="_blank"
+                            class="font-extrabold flex-grow w-full text-center">Download CV</a>
+                    </article>
                 </article>
             </section>
 
             <article class="mt-10 mb-7 text-smoke-white w-full">
-                <p class="text-xl font-black w-full text-center">My services</p>
+                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl">My services</p>
             </article>
 
             <section class="w-full flex flex-wrap justify-between">
                 <% services.forEach(item=> { %>
-                    <article class="w-[45%] bg-dark-gray p-5 rounded-2xl flex flex-col items-center mb-10">
+                    <article class="w-[45%] bg-dark-gray p-5 rounded-2xl flex flex-col items-center mb-10 sm:w-[30%] lg:w-[28%] lg:mb-14">
                         <div class="text-purple-about text-3xl"><i class="<%= item.icon %>"></i></div>
 
                         <div class="text-smoke-white mt-5">
@@ -67,11 +69,11 @@
             </section>
 
             <article class="text-smoke-white w-full mb-7">
-                <p class="text-xl font-black w-full text-center">My profession</p>
+                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl">My profession</p>
             </article>
 
-            <section class="w-full">
-                <article class="text-smoke-white font-medium">
+            <section class="w-full flex flex-col items-center sm:flex-row sm:justify-between">
+                <article class="text-smoke-white font-medium sm:w-3/5">
                     <p class="mb-4">I decided to study systems engineering since as a child I was interested in
                         technology more than
                         anything else. At school I did well in physics and mathematics, understanding that I had good
@@ -83,19 +85,19 @@
                         other fields such as calculus or physics.</p>
                 </article>
 
-                <article>
-
+                <article class="w-1/3 mt-8 sm:mt-0 sm:w-1/5 lg:w-[10%]">
+                    <img class="w-full" src="/images/rocker.png" alt="">
                 </article>
             </section>
 
             <article class="mt-10 mb-7 text-smoke-white w-full">
-                <p class="text-xl font-black w-full text-center">My hobbies</p>
+                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl">My hobbies</p>
             </article>
 
-            <section class="w-full flex flex-wrap">
+            <section class="w-full flex flex-wrap sm:justify-between">
                 <% hobbies.forEach(item=> { %>
-                    <article class="w-full flex items-center justify-between mb-10">
-                        <article class="w-1/5 text-3xl">
+                    <article class="w-full flex items-center justify-between mb-10 bg-dark-gray p-4 rounded-2xl sm:w-[47%] lg:w-[30%]">
+                        <article class="w-1/5 text-3xl text-purple-about text-center">
                             <i class="<%= item.icon %>"></i>
                         </article>
 
