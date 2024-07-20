@@ -46,7 +46,7 @@ export default {
       dropShadow: {
         'avatar': '0 12px 15px rgba(255, 255, 255, 0.4)',
         'button': '0 8px 15px rgba(255, 255, 255, 0.4)',
-        'card': '0 12px 15px rgba(255, 255, 255, 0.4)',
+        'card': '10px 12px 15px rgba(255, 255, 255, 0.4)',
       }
     },
   },

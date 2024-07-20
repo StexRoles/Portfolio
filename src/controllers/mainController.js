@@ -34,6 +34,10 @@ const mainController = {
         let hobbies = JSON.parse(fs.readFileSync(hobbiesPath, "utf-8"));
 
         res.render('about', {services, hobbies});
+    },
+    projects: (req, res) => {
+        
+        res.render('projects');
     }
 }
 

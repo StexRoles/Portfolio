@@ -13,6 +13,8 @@ router.get('/', mainController.index);
 // ROUTE FROM THE ABOUT PAGE
 router.get('/about', mainController.about);
 
+// ROUTE FROM THE PROJECTS PAGE
+router.get('/projects', mainController.projects);
 
 //---------------------------------------------------------------//
 // EXPORT ROUTER

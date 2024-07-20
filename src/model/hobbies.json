@@ -1,5 +1,20 @@
 [
     {
+        "icon": "fa-solid fa-dumbbell",
+        "title": "Go to gym",
+        "description": "I improve my physical condition, increase my energy and reduce stress."
+    },
+    {
+        "icon": "fa-solid fa-book",
+        "title": "Travel",
+        "description": "I learn about different cultures, meet new people and explore new places."
+    },
+    {
+        "icon": "fa-solid fa-music",
+        "title": "Listen to music",
+        "description": "It helps me relax, improve my mood and focus."
+    },
+    {
         "icon": "fa-solid fa-dragon",
         "title": "Watch anime",
         "description": "It helps me improve my creativity and explore imaginative stories and worlds."
@@ -8,10 +23,5 @@
         "icon": "fa-solid fa-gamepad",
         "title": "Play videogames",
         "description": "It helps me relax and have fun, in addition to improving my coordination and problem solving."
-    },
-    {
-        "icon": "fa-solid fa-dumbbell",
-        "title": "Go to gym",
-        "description": "I improve my physical condition, increase my energy and reduce stress."
     }
 ]
