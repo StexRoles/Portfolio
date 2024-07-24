@@ -2,26 +2,26 @@
     "name": "portfolio",
     "version": 2,
     "builds": [
-        {
-            "src": "src/app.js",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "src/app.js",
+        "use": "@vercel/node"
+      }
     ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "src/app.js"
-        }
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "src/app.js"
+      }
     ],
     "headers": [
-    {
-      "source": "public/css/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "source": "public/css/(.*)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      }
+    ]
+  }
