@@ -15,7 +15,9 @@ export default {
         'smoke-white': '#F2F3F4',
         'card': '#566573',
         'purple-about': '#5900CA',
-        'dark-gray': '#1E1E1E'
+        'dark-gray': '#1E1E1E',
+        'blue-project': '#3498DB',
+        'blue-dark': '#1B2631',
       },
       keyframes: {
         shimmer: {

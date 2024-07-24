@@ -37,7 +37,13 @@ const mainController = {
     },
     projects: (req, res) => {
         
-        res.render('projects');
+        // DATA OF SERVICES
+        let projectsPath = path.join(__dirname, '..', 'model', 'projects.json');
+        let projects = JSON.parse(fs.readFileSync(projectsPath, "utf-8"));
+
+        let numberProjects = projects.length;
+
+        res.render('projects', {projects, numberProjects});
     }
 }
 

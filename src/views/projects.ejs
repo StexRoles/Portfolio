@@ -5,8 +5,46 @@
     <%- include ('./partials/header') %>
 
 
-        <main class="p-60 bg-sky-600">
+        <main class="bg-black px-8">
+            <article class="py-6 w-full">
+                <p class="text-center text-2xl font-black text-smoke-white lg:text-3xl">Projects</p>
+            </article>
 
+            <section class="text-smoke-white flex flex-col">
+                <article class="bg-blue-dark px-7 py-5 flex flex-col items-center mb-7">
+                    <p class="text-blue-project pb-3 text-xl font-black">6</p>
+
+                    <p class="text-base">Months Experience</p>
+                </article>
+
+                <article class="bg-blue-dark px-7 py-5 flex flex-col items-center">
+                    <p class="text-blue-project pb-3 text-xl font-black"><%= numberProjects %></p>
+
+                    <p class="text-base">Completed Projects</p>
+                </article>
+            </section>
+
+            <article class="py-6 w-full">
+                <p class="text-xl font-black text-smoke-white">Featured Projects</p>
+            </article>
+
+            <section class="pb-1">
+                <% projects.forEach(item => { %>
+                    <article class="mb-7">
+                        <article class="bg-blue-dark px-5 py-12 mb-5">
+                            <div class="">
+                                <img src="/images/<%= item.image %>" class="w-full" alt="">
+                            </div>
+                        </article>
+    
+                        <article>
+                            <p class="text-smoke-white font-extrabold mb-1"><%= item.title %></p>
+    
+                            <a href="<%= item.github %>" class="text-sm text-blue-project font-extrabold">Github ➔</a>
+                        </article>
+                    </article>
+                <% }) %>
+            </section>
         </main>
 
         <%- include ('./partials/footer') %>
