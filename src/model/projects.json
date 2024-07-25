@@ -4,20 +4,20 @@
         "title": "Laguz E-commerce",
         "image": "laguz.webp",
         "github": "https://github.com/StexRoles/grupo_3_Laguz",
-        "website": "6th semester"
+        "website": ""
     },
     {
         "id": 2,
         "title": "Metro Bogotá",
         "image": "metro.webp",
         "github": "https://github.com/StexRoles/Metro_Bogota",
-        "website": "6th semester"
+        "website": "https://metro-bogota-ste-nav.onrender.com/"
     },
     {
         "id": 3,
         "title": "Vivamos en paz",
         "image": "conjunto.webp",
         "github": "https://github.com/StexRoles/Administradora_Propiedad_Horizontal",
-        "website": "6th semester"
+        "website": ""
     }
 ]

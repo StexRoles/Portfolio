@@ -49,6 +49,10 @@ export default {
         'avatar': '0 12px 15px rgba(255, 255, 255, 0.4)',
         'button': '0 8px 15px rgba(255, 255, 255, 0.4)',
         'card': '10px 12px 15px rgba(255, 255, 255, 0.4)',
+      },
+      boxShadow: {
+        'project': '0 10px 6px rgba(171, 213, 255, 0.2)',
+        'project-card': '8px 10px 6px rgba(171, 213, 255, 0.2)',
       }
     },
   },
