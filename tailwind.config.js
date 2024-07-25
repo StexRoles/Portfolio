@@ -52,7 +52,7 @@ export default {
       },
       boxShadow: {
         'project': '0 10px 6px rgba(171, 213, 255, 0.2)',
-        'project-card': '8px 10px 6px rgba(171, 213, 255, 0.2)',
+        'project-card': '8px 10px 6px rgba(171, 213, 255, 0.1)',
       }
     },
   },

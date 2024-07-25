@@ -822,10 +822,6 @@ video {
   width: 100%;
 }
 
-.w-\[18\%\]{
-  width: 18%;
-}
-
 .max-w-\[28rem\]{
   max-width: 28rem;
 }
@@ -887,43 +883,6 @@ video {
 
 .animate-slideOutUp{
   animation: slideOutUp 2s forwards;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
-}
-
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.animate-pulse{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .flex-col{
@@ -1263,7 +1222,7 @@ video {
 }
 
 .shadow-project-card{
-  --tw-shadow: 8px 10px 6px rgba(171, 213, 255, 0.2);
+  --tw-shadow: 8px 10px 6px rgba(171, 213, 255, 0.1);
   --tw-shadow-colored: 8px 10px 6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -1374,6 +1333,10 @@ video {
     margin-bottom: 9rem;
   }
 
+  .sm\:mb-8{
+    margin-bottom: 2rem;
+  }
+
   .sm\:ml-16{
     margin-left: 4rem;
   }
@@ -1404,10 +1367,6 @@ video {
 
   .sm\:mt-8{
     margin-top: 2rem;
-  }
-
-  .sm\:mb-8{
-    margin-bottom: 2rem;
   }
 
   .sm\:block{
@@ -1446,6 +1405,10 @@ video {
     width: 14rem;
   }
 
+  .sm\:w-\[18\%\]{
+    width: 18%;
+  }
+
   .sm\:w-\[30\%\]{
     width: 30%;
   }
@@ -1456,10 +1419,6 @@ video {
 
   .sm\:w-\[47\%\]{
     width: 47%;
-  }
-
-  .sm\:w-\[18\%\]{
-    width: 18%;
   }
 
   .sm\:flex-row{
