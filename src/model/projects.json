@@ -4,14 +4,14 @@
         "title": "Laguz E-commerce",
         "image": "laguz.webp",
         "github": "https://github.com/StexRoles/grupo_3_Laguz",
-        "website": ""
+        "website": "https://laguz-three.vercel.app/"
     },
     {
         "id": 2,
         "title": "Metro Bogotá",
         "image": "metro.webp",
         "github": "https://github.com/StexRoles/Metro_Bogota",
-        "website": "https://metro-bogota-ste-nav.onrender.com/"
+        "website": "https://metro-bogota.vercel.app/"
     },
     {
         "id": 3,
