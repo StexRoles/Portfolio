@@ -4,17 +4,26 @@
         </article>
 
         <article class="text-smoke-white mt-10 text-center mx-10 text-sm sm:w-[30%] sm:mx-0 sm:mt-0 sm:text-start lg:w-1/3">
-            <p class="font-bold pb-2 sm:pb-4">About</p>
-            <p>
-                Thank you very much for taking the time to
-                 review my story, I developed this portfolio in 
-                order to show my work journey and what will 
-                continue to be my professional career.
-            </p>
+            <p class="font-bold pb-2 sm:pb-4"><%= lang === 'en' ? 'About' : 'Sobre este proyecto' %></p>
+            <% if (lang === 'en') { %>
+                <p>
+                    Thank you very much for taking the time to 
+                    review my story, I developed this portfolio in 
+                    order to show my work journey and what will 
+                    continue to be my professional career.
+                </p>
+            <% } else { %>
+                <p>
+                    Muchas gracias por tomarte el tiempo de 
+                    revisar mi historia, he desarrollado este portafolio con el 
+                    fin de mostrar mi recorrido laboral y lo que 
+                    seguirá siendo mi carrera profesional.
+                </p>
+            <% } %>
         </article>
 
         <article class="sm:w-[30%] sm:flex sm:flex-col sm:items-center lg:w-1/3">
-            <p class="hidden text-lg text-smoke-white text-center font-bold sm:block">Contact me:</p>
+            <p class="hidden text-lg text-smoke-white text-center font-bold sm:block"><%= lang === 'en' ? 'Contact me:' : 'Contáctame:' %></p>
 
             <article class="flex items-center justify-between w-56 my-9 sm:my-4 sm:justify-evenly">
                 <a href="https://github.com/StexRoles" target="_blank"><img class="h-8 w-8 hover:scale-110 transition-all" src="/images/SocialMedia/github.webp" alt="github"></a>

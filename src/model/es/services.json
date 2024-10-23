@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "fa-solid fa-pencil",
+        "title": "Diseño creativo",
+        "description": "Creo diseños web llamativos y estéticos, utilizando herramientas de diseño como Figma."
+    },
+    {
+        "icon": "fa-solid fa-user-astronaut",
+        "title": "Interfaz de usuario",
+        "description": "Creo páginas web intuitivas y fáciles de usar para el usuario, además de tener un diseño adaptativo para diferentes dispositivos."
+    },
+    {
+        "icon": "fa-solid fa-code",
+        "title": "Código limpio",
+        "description": "Genero código limpio y escalable, utilizando buenas prácticas de desarrollo y documentación."
+    },
+    {
+        "icon": "fa-solid fa-laptop",
+        "title": "Front-end",
+        "description": "Creo páginas del lado del usuario que se adaptan tanto a la estética como a la funcionalidad."
+    },
+    {
+        "icon": "fa-solid fa-server",
+        "title": "Back-end",
+        "description": "Creo las funcionalidades del lado del servidor como validaciones, sistema de enrutamiento y creación de API."
+    },
+    {
+        "icon": "fa-solid fa-database",
+        "title": "Base de datos",
+        "description": "Modelo bases de datos estructuradas lógicamente para determinar cómo almacenar, organizar y manipular datos."
+    }
+]

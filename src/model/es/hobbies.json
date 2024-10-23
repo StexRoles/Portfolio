@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "fa-solid fa-dumbbell",
+        "title": "Ir al gimnasio",
+        "description": "Me ayuda a mejorar mi condición física, aumento mi energía y reduzco el estrés."
+    },
+    {
+        "icon": "fa-solid fa-book",
+        "title": "Viajar",
+        "description": "Aprendo sobre diferentes culturas además conozco gente nueva y exploro nuevos lugares."
+    },
+    {
+        "icon": "fa-solid fa-music",
+        "title": "Escuchar música",
+        "description": "Me ayuda a relajarme, mejorar mi estado de ánimo y concentrarme."
+    },
+    {
+        "icon": "fa-solid fa-dragon",
+        "title": "Ver anime",
+        "description": "Me ayuda a mejorar mi creatividad y explorar historias y mundos imaginativos."
+    },
+    {
+        "icon": "fa-solid fa-gamepad",
+        "title": "Jugar videojuegos",
+        "description": "Me ayuda a relajarme y divertirme, además de mejorar mi coordinación y resolución de problemas."
+    }
+]

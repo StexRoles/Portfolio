@@ -7,23 +7,23 @@
 
         <main class="bg-black px-8 sm:px-28 lg:px-52">
             <article class="py-6 w-full sm:py-8">
-                <p class="text-center text-2xl font-black text-smoke-white lg:text-3xl">Projects</p>
+                <p class="text-center text-2xl font-black text-smoke-white lg:text-3xl"><%= lang === 'en' ? 'Projects' : 'Proyectos' %></p>
             </article>
 
             <section class="text-smoke-white flex flex-col sm:flex-row sm:justify-between">
                 <article class="bg-blue-dark px-7 py-5 flex flex-col items-center mb-7 sm:mb-0 sm:w-[45%] lg:py-7 text-center shadow-project-card">
                     <p class="text-blue-project pb-3 text-xl font-black lg:text-3xl">6</p>
-                    <p class="text-base lg:text-xl">Months Experience</p>
+                    <p class="text-base lg:text-xl"><%= lang === 'en' ? 'Months Experience' : 'Meses de Experiencia' %></p>
                 </article>
 
                 <article class="bg-blue-dark px-7 py-5 flex flex-col items-center sm:w-[45%] lg:py-7 text-center shadow-project-card">
                     <p class="text-blue-project pb-3 text-xl font-black lg:text-3xl"><%= numberProjects %></p>
-                    <p class="text-base lg:text-xl">Completed Projects</p>
+                    <p class="text-base lg:text-xl"><%= lang === 'en' ? 'Completed Projects' : 'Proyectos Completados' %></p>
                 </article>
             </section>
 
             <article class="py-6 w-full sm:py-8">
-                <p class="text-xl font-black text-smoke-white lg:text-2xl">Featured Projects</p>
+                <p class="text-xl font-black text-smoke-white lg:text-2xl"><%= lang === 'en' ? 'Featured Projects' : 'Proyectos Destacados' %></p>
             </article>
 
             <section class="pb-1 sm:flex sm:flex-wrap sm:justify-between">

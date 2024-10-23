@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Ingeniería de sistemas",
+        "image": "ud.webp",
+        "institution": "Universidad Distrital Francisco José de Caldas",
+        "status": "6to semestre"
+    },
+    {
+        "id": 2,
+        "title": "Desarrollador web Full Stack",
+        "image": "dh.webp",
+        "institution": "Digital House",
+        "status": "completado"
+    }
+]

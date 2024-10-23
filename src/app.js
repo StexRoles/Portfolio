@@ -3,6 +3,7 @@ import express from 'express';
 const app = express();
 
 import path from 'path';// IMPORT PATH
+import languageMiddleware from './middlewares/languageMiddleware.js'; // IMPORT LANGUAGE MIDDLEWARE
 
 // SETTINGS TO USE dirname
 import { fileURLToPath } from 'url';
@@ -15,6 +16,7 @@ const __dirname = dirname(__filename);
 app.use(express.static(path.join(__dirname, '../public'))); // TO USE STATIC FILES
 app.use(express.urlencoded({extended: false})); // TAKE THE DATA FROM THE BODY
 app.use(express.json()); // TAKE THE DATA FROM THE BODY
+app.use(languageMiddleware); // LANGUAGE MIDDLEWARE
 
 // SETTINGS TEMPLATE ENGINE: ENGINE JAVA SCRIPT
 app.set('view engine', 'ejs');

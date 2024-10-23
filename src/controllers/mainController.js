@@ -8,42 +8,52 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Function to load JSON files
+const loadJSON = (filePath) => JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
 // MODULE FOR THE LOGIC AND PROCESSING OF THE APP
 const mainController = {
     index: (req, res) => {
 
+        const lang = res.locals.lang || 'en';
+        
         // DATA OF TECHNOLOGIES
-        let technologiesPath = path.join(__dirname, '..', 'model', 'technologies.json');
-        let technologies = JSON.parse(fs.readFileSync(technologiesPath, "utf-8"));
-
+        const technologiesPath = path.join(__dirname, '..', 'model', lang, 'technologies.json');
+        const technologies = loadJSON(technologiesPath);
+        
         // DATA OF EDUCATION
-        let educationPath = path.join(__dirname, '..', 'model', 'education.json');
-        let education = JSON.parse(fs.readFileSync(educationPath, "utf-8"));
+        const educationPath = path.join(__dirname, '..', 'model', lang, 'education.json');
+        const education = loadJSON(educationPath);
 
-        res.render('index', {technologies, education});
+        res.render('index', { technologies, education, lang });
 
     },
     about: (req, res) => {
 
+        const lang = res.locals.lang || 'en';
+
         // DATA OF SERVICES
-        let servicesPath = path.join(__dirname, '..', 'model', 'services.json');
-        let services = JSON.parse(fs.readFileSync(servicesPath, "utf-8"));
+         const servicesPath = path.join(__dirname, '..', 'model', lang, 'services.json');
+         const services = loadJSON(servicesPath);
+         
+         // DATA OF HOBBIES
+         const hobbiesPath = path.join(__dirname, '..', 'model', lang, 'hobbies.json');
+         const hobbies = loadJSON(hobbiesPath);
+        
 
-        // DATA OF HOBBIES
-        let hobbiesPath = path.join(__dirname, '..', 'model', 'hobbies.json');
-        let hobbies = JSON.parse(fs.readFileSync(hobbiesPath, "utf-8"));
-
-        res.render('about', {services, hobbies});
+         res.render('about', { services, hobbies, lang });
     },
     projects: (req, res) => {
         
+        const lang = res.locals.lang || 'en';
+
         // DATA OF SERVICES
-        let projectsPath = path.join(__dirname, '..', 'model', 'projects.json');
-        let projects = JSON.parse(fs.readFileSync(projectsPath, "utf-8"));
+        const projectsPath = path.join(__dirname, '..', 'model', lang,  'projects.json');
+        const projects = loadJSON(projectsPath);
 
-        let numberProjects = projects.length;
+        const numberProjects = projects.length;
 
-        res.render('projects', {projects, numberProjects});
+        res.render('projects', { projects, numberProjects, lang });
     }
 }
 

@@ -14,12 +14,12 @@
                         class="font-extrabold text-3xl text-center mb-9 sm:text-left sm:text-5xl sm:mb-3 lg:text-[3.5rem] animate-shimmer bg-clip-text bg-shimmer-size text-transparent bg-shimmer">
                         Steven <span class="sm:block sm:mt-2">Navarro</span>
                     </p>
-                    <p class="text-2xl text-center mb-9 sm:mb-14 sm:text-lg lg:text-2xl">Full Stack Web Developer</p>
+                    <p class="text-2xl text-center mb-9 sm:mb-14 sm:text-lg lg:text-2xl"><%= lang === 'en' ? 'Full Stack Web Developer' : 'Desarrollador Web Full Stack' %></p>
                 </article>
 
                 <article
                     class="flex items-center justify-center text-smoke-white text-2xl font-extralight border-2 rounded-3xl w-56 text-center sm:ml-16 sm:mb-36 lg:ml-20 lg:w-[230px] lg:mb-28 hover:scale-105 transition-all">
-                    <a href="/projects" class="flex-grow w-full text-center">view projects</a>
+                    <a href="/projects" class="flex-grow w-full text-center"><%= lang === 'en' ? 'view projects' : 'ver proyectos' %></a>
                 </article>
 
                 <article class="flex items-center justify-between w-56 my-16 sm:ml-16 sm:my-0 lg:ml-20">
@@ -38,7 +38,7 @@
 
             <section class="bg-black-body">
                 <article class="text-smoke-white font-bold text-xl text-center py-12 sm:text-3xl">
-                    <p>My tools and technologies</p>
+                    <p><%= lang === 'en' ? 'My tools and technologies' : 'Mis herramientas y tecnologías' %></p>
                 </article>
 
                 <article class="flex flex-wrap mx-[10%] justify-between sm:mx-[15%] lg:mx-[20%]">
@@ -70,7 +70,7 @@
 
 
                 <article class="text-smoke-white font-bold text-xl text-center pb-12 pt-8 sm:text-3xl">
-                    <p>Education and Experience</p>
+                    <p><%= lang === 'en' ? 'Education and Experience' : 'Educación y Experiencia' %></p>
                 </article>
 
                 <article class="mx-[22%] pb-4 flex flex-wrap h-full sm:justify-between sm:mx-[15%] lg:mx-[25%]">

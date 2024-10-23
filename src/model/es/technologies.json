@@ -1,0 +1,114 @@
+[
+    {   
+        "id": 1,
+        "name": "node",
+        "image": "node.webp",
+        "title": "Node.js",
+        "description": "Utilizo Node.js como entorno de ejecución para JavaScript en el backend. Esto me permite crear aplicaciones rápidas y eficientes." 
+    },
+    {
+        "id": 2,
+        "name": "js",
+        "image": "javascript.webp",
+        "title": "JavaScript",
+        "description": "Utilizo JavaScript para agregar interactividad a las páginas web, incluidos menús desplegables y validación de formularios." 
+    },
+    {
+        "id": 3,
+        "name": "css",
+        "image": "css.webp",
+        "title": "CSS",
+        "description": "Utilizo CSS para diseñar y dar estilo a páginas web, asegurándome de que sean atractivas y fáciles de usar."  
+    },
+    {
+        "id": 4,
+        "name": "html",
+        "image": "html.webp",
+        "title": "HTML5",
+        "description": "Utilizo HTML para estructurar el contenido de las páginas web, incluyendo elementos como encabezados, párrafos y listas." 
+    },
+    {
+        "id": 5,
+        "name": "react",
+        "image": "react.webp",
+        "title": "React.js",
+        "description": "Utilizo React para crear interfaces de usuario dinámicas y reutilizables en mis aplicaciones web."   
+    },
+    {
+        "id": 6,
+        "name": "express",
+        "image": "express-js.webp",
+        "title": "Express.js",
+        "description": "Utilizo Express.js como framework para desarrollar aplicaciones web en Node.js, acelerando el desarrollo backend y la creación de APIs RESTful."   
+    },
+    {
+        "id": 7,
+        "name": "postgresql",
+        "image": "postgresql.webp",
+        "title": "PostgreSql",
+        "description": "Utilizo PostgreSQL como base de datos relacional en mis aplicaciones web, garantizando eficiencia y seguridad en la manipulación de datos."   
+    },
+    {
+        "id": 8,
+        "name": "trello",
+        "image": "trello.webp",
+        "title": "Trello",
+        "description": "Utilizo Trello como una herramienta de gestión de proyectos ágil para organizar tareas y colaborar con equipos de forma eficaz." 
+    },
+    {
+        "id": 15,
+        "name": "tailwindcss",
+        "image": "tailwind-css.webp",
+        "title": "Tailwind CSS",
+        "description": "Utilizo Tailwind CSS para diseñar interfaces de usuario modernas y personalizables utilizando clases predefinidas." 
+    },
+    {
+        "id": 10,
+        "name": "java",
+        "image": "java.webp",
+        "title": "Java",
+        "description": "Utilizo Java para desarrollar aplicaciones empresariales y sistemas backend robustos y escalables."   
+    },
+    {
+        "id": 11,
+        "name": "figma",
+        "image": "figma.webp",
+        "title": "Figma",
+        "description": "Utilizo Figma como herramienta de diseño de UI y creación de prototipos para crear experiencias coherentes y atractivas."   
+    },
+    {
+        "id": 12,
+        "name": "postman",
+        "image": "postman.webp",
+        "title": "Postman",
+        "description": "Utilizo Postman como cliente API para probar, desarrollar y documentar servicios web en mis proyectos."   
+    },
+    {
+        "id": 13,
+        "name": "ejs",
+        "image": "ejs.webp",
+        "title": "EJS",
+        "description": "Utilizo EJS como motor de plantillas en Node.js para generar vistas dinámicas con una mezcla de HTML y JavaScript." 
+    },
+    {
+        "id": 14,
+        "name": "sequelize",
+        "image": "sequelize.webp",
+        "title": "Sequelize ORM",
+        "description": "Utilizo Sequelize como un ORM en Node.js para interactuar con bases de datos relacionales de una manera intuitiva y eficiente." 
+    },
+    {
+        "id": 9,
+        "name": "git",
+        "image": "git.webp",
+        "title": "Git & GitHub",
+        "description": "Utilizo Git para el control de versiones y GitHub para alojar y colaborar en mis proyectos web, lo que facilita la gestión de cambios y la colaboración con otros desarrolladores."   
+    },
+    {
+        "id": 16,
+        "name": "mysql",
+        "image": "mysql.webp",
+        "title": "MySql",
+        "description": "Utilizo MySQL como sistema de gestión de bases de datos en mis proyectos web, garantizando eficiencia y seguridad en la manipulación de datos." 
+    }
+]
