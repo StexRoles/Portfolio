@@ -4,13 +4,13 @@
         "title": "Systems engineer",
         "image": "ud.webp",
         "institution": "Universidad Distrital Francisco José de Caldas",
-        "status": "6th semester"
+        "status": "6th Semester"
     },
     {
         "id": 2,
         "title": "Web developer full stack",
         "image": "dh.webp",
         "institution": "Digital House",
-        "status": "completed"
+        "status": "Completed"
     }
 ]
