@@ -19,5 +19,18 @@
         "image": "conjunto.webp",
         "github": "https://github.com/StexRoles/Administradora_Propiedad_Horizontal",
         "website": ""
+    }, {
+        "id": 3,
+        "title": "Prueba practica educamas",
+        "image": "pruebatecnica.png",
+        "github": "https://github.com/StexRoles/prueba-tecnica-educamas",
+        "website": ""
+    },
+    {
+        "id": 3,
+        "title": "Pagina grupo de trabajo SID",
+        "image": "sid.png",
+        "github": "https://github.com/GrupoSemanadeingenioSID/sid-frontend",
+        "website": ""
     }
 ]

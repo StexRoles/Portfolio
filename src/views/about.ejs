@@ -7,13 +7,16 @@
 
         <main class="bg-black-to-purple px-9 lg:px-20">
             <article class="py-6 w-full">
-                <p class="text-center text-2xl font-black  text-smoke-white lg:text-3xl"><%= lang === 'en' ? 'About Me' : 'Sobre Mí' %></p>
+                <p class="text-center text-2xl font-black  text-smoke-white lg:text-3xl">
+                    <%= lang==='en' ? 'About Me' : 'Sobre Mí' %>
+                </p>
             </article>
 
             <section class="flex flex-col items-center sm:flex-row sm:justify-around">
                 <article
                     class="relative h-auto w-64 rounded-bl-full rounded-br-full drop-shadow-avatar overflow-hidden flex flex-col items-center mb-8 sm:w-56 lg:w-72">
-                    <article class="bg-purple-about rounded-full h-64 w-64 mt-10 sm:w-56 sm:h-56 lg:w-72 lg:h-72"></article>
+                    <article class="bg-purple-about rounded-full h-64 w-64 mt-10 sm:w-56 sm:h-56 lg:w-72 lg:h-72">
+                    </article>
 
                     <img class="absolute top-4 h-72 object-cover lg:h-[22rem]" src="/images/avatar.webp" alt="Avatar">
                 </article>
@@ -21,51 +24,71 @@
                 <article class="flex flex-col items-center sm:w-1/2">
                     <article class="text-smoke-white w-full">
                         <p class="font-extrabold text-center mb-5 sm:text-start lg:text-xl">
-                            <%= lang=== 'en' ? 'Im Steven, a systems engineer and full stack web developer.' : 'Soy Steven, ingeniero de sistemas y desarrollador web full stack.'%>
+                            <%= lang==='en' ? 'Im Steven, a systems engineer and full stack web developer.'
+                                : 'Soy Steven, ingeniero de sistemas y desarrollador web full stack.' %>
                         </p>
 
                         <p class="text-sm font-medium lg:text-base">
-                            <% if (lang === 'en') { %>
+                            <% if (lang==='en' ) { %>
                                 <p>
-                                    I consider myself a person determined to move forward, ready to solve challenges and build my own path, 
-                                    becoming better every day and learning more from my mistakes than from my successes. Since I was a child 
-                                    I have been interested in technology and in addition to my professional career, I am interested in the 
-                                    world of web development, a world where my job is to make imagination come true.
+                                    Systems engineering student and web developer with a focus on the constant
+                                    adoption of emerging technologies. My backend experience with technologies
+                                    such as Nodejs, Python, Java, and frameworks like Express and Django has
+                                    allowed me to design robust and scalable architectures over the past two years.
+                                    On the frontend, I integrate design skills with Figma and development with tools
+                                    such as React and Tailwind CSS to create functional interfaces. I excel at project
+                                    management, with an ability to manage teams.
                                 </p>
-                            <% } else { %>
-                                <p>
-                                    Me considero una persona decidida a seguir adelante, dispuesta a resolver retos y construir mi propio camino,
-                                    siendo cada día mejor y aprendiendo más de mis errores que de mis aciertos. Desde pequeño
-                                    me ha interesado la tecnología y además de mi carrera profesional, me interesa el mundo del desarrollo web, 
-                                    un mundo donde mi trabajo es hacer realidad la imaginación.
-                                </p>
-                            <% } %>
+                                <% } else { %>
+                                    <p>
+                                        Estudiante de ingeniería en sistemas y desarrollador web con un enfoque en la
+                                        adopción constante de
+                                        tecnologías emergentes. Tengo experiencia en backend con tecnologías como
+                                        Nodejs, Python, Java y
+                                        frameworks como Express y Django me ha permitido diseñar arquitecturas sólidas y
+                                        escalables en los
+                                        últimos dos años. En el frontend, integro habilidades de diseño con Figma y
+                                        desarrollo con herramientas
+                                        como React y tailwindcss para crear interfaces funcionales. Destaco en la
+                                        gestión de proyectos, con una
+                                        capacidad para manejar equipos de trabajo
+                                    </p>
+                                    <% } %>
                         </p>
-    
+
                         <div class="h-[1px] bg-smoke-white my-5 lg:my-7"></div>
                     </article>
-    
+
                     <article class="text-smoke-white w-full mb-5 lg:flex lg:justify-between lg:text-lg lg:mb-7">
-                        <p class="mb-2"><span class="font-bold"><%= lang === 'en' ? 'Age: ' : 'Edad: ' %></span>21</p>
+                        <p class="mb-2"><span class="font-bold">
+                                <%= lang==='en' ? 'Age: ' : 'Edad: ' %>
+                            </span>21</p>
                         <p class="mb-2"><span class="font-bold">Tel:</span> +57 3016288659</p>
-                        <p class="mb-2"><span class="font-bold"><%= lang === 'en' ? 'From: ' : 'Ubicación: ' %></span>Bogotá, Colombia</p>
+                        <p class="mb-2"><span class="font-bold">
+                                <%= lang==='en' ? 'From: ' : 'Ubicación: ' %>
+                            </span>Bogotá, Colombia</p>
                     </article>
-    
+
                     <article
                         class="flex items-center justify-center bg-purple-about h-10 w-60 rounded-full hover:scale-105 drop-shadow-button transition-all text-smoke-white lg:h-12">
                         <a href="/docs/CV_Steven_Navarro.pdf" target="_blank"
-                            class="font-extrabold flex-grow w-full text-center"><%= lang === 'en' ? 'Download CV' : 'Descargar CV' %></a>
+                            class="font-extrabold flex-grow w-full text-center">
+                            <%= lang==='en' ? 'Download CV' : 'Descargar CV' %>
+                        </a>
                     </article>
                 </article>
             </section>
 
             <article class="mt-10 mb-7 text-smoke-white w-full">
-                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl"><%= lang === 'en' ? 'My services' : 'Mis servicios' %></p>
+                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl">
+                    <%= lang==='en' ? 'My services' : 'Mis servicios' %>
+                </p>
             </article>
 
             <section class="w-full flex flex-wrap justify-between">
                 <% services.forEach(item=> { %>
-                    <article class="w-[45%] bg-dark-gray p-5 drop-shadow-card rounded-2xl flex flex-col items-center mb-10 hover:scale-105 transition-all sm:w-[30%] lg:w-[28%] lg:mb-14">
+                    <article
+                        class="w-[45%] bg-dark-gray p-5 drop-shadow-card rounded-2xl flex flex-col items-center mb-10 hover:scale-105 transition-all sm:w-[30%] lg:w-[28%] lg:mb-14">
                         <div class="text-purple-about text-3xl"><i class="<%= item.icon %>"></i></div>
 
                         <div class="text-smoke-white mt-5">
@@ -81,45 +104,61 @@
             </section>
 
             <article class="text-smoke-white w-full mb-7">
-                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl"><%= lang === 'en' ? 'My profession' : 'Mi profesión' %></p>
+                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl">
+                    <%= lang==='en' ? 'My profession' : 'Mi profesión' %>
+                </p>
             </article>
 
             <section class="w-full flex flex-col items-center sm:flex-row">
                 <article class="text-smoke-white font-medium sm:w-3/5 sm:mr-[15%] lg:text-lg">
-                    <% if (lang === 'en') { %>
+                    <% if (lang==='en' ) { %>
                         <p class="mb-4">I decided to study systems engineering since as a child I was interested in
-                            technology more than anything else. At school I did well in physics and mathematics, understanding that I had good
+                            technology more than anything else. At school I did well in physics and mathematics,
+                            understanding that I had good
                             logical thinking and I also didn't really like writing and writing long texts.</p>
-    
-                        <p> Once at university I had to work for a while to pay for my materials, because of this experience
-                            I decided to start improving my skills that will help me in my career and I decided to go down
-                            the path of web development, currently I am still learning many things both in development as in
+
+                        <p> Once at university I had to work for a while to pay for my materials, because of this
+                            experience
+                            I decided to start improving my skills that will help me in my career and I decided to go
+                            down
+                            the path of web development, currently I am still learning many things both in development
+                            as in
                             other fields such as calculus or physics.</p>
-                    <% } else { %>
-                        <p class="mb-4">Decidí estudiar ingeniería de sistemas ya que desde pequeño me interesaba más la tecnología. 
-                            En la escuela me iba bien en materias como física y matemáticas, entonces sabiendo que tenía un buen pensamiento
-                            lógico y además no me gustaba mucho escribir y redactar textos largos, elegi este camino.</p>
-    
-                        <p> Una vez en la universidad tuve que trabajar un tiempo para poder pagar mis materiales, debido a esta experiencia
-                            decidí empezar a mejorar mis habilidades que me ayudarían en mi carrera y decidí emprender
-                            el camino del desarrollo web, actualmente sigo aprendiendo muchas cosas tanto en desarrollo como en
-                            otros campos como el cálculo o física.</p>
-                    <% } %>
-                    
+                        <% } else { %>
+                            <p class="mb-4">Decidí estudiar ingeniería de sistemas ya que desde pequeño me interesaba
+                                más la tecnología.
+                                En la escuela me iba bien en materias como física y matemáticas, entonces sabiendo que
+                                tenía un buen pensamiento
+                                lógico y además no me gustaba mucho escribir y redactar textos largos, elegi este
+                                camino.</p>
+
+                            <p> Una vez en la universidad tuve que trabajar un tiempo para poder pagar mis materiales,
+                                debido a esta experiencia
+                                decidí empezar a mejorar mis habilidades que me ayudarían en mi carrera y decidí
+                                emprender
+                                el camino del desarrollo web, actualmente sigo aprendiendo muchas cosas tanto en
+                                desarrollo como en
+                                otros campos como el cálculo o física.</p>
+                            <% } %>
+
                 </article>
 
-                <article class="w-1/3 drop-shadow-avatar mt-8 sm:mt-0 sm:w-1/5 lg:w-[15%] hover:scale-105 transition-all">
+                <article
+                    class="w-1/3 drop-shadow-avatar mt-8 sm:mt-0 sm:w-1/5 lg:w-[15%] hover:scale-105 transition-all">
                     <img class="w-full" src="/images/rocker.png" alt="">
                 </article>
             </section>
 
             <article class="mt-10 mb-7 text-smoke-white w-full">
-                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl"><%= lang === 'en' ? 'My hobbies' : 'Mis pasatiempos' %></p>
+                <p class="text-xl font-black w-full text-center sm:text-start lg:text-2xl">
+                    <%= lang==='en' ? 'My hobbies' : 'Mis pasatiempos' %>
+                </p>
             </article>
 
             <section class="w-full flex flex-wrap sm:justify-around">
                 <% hobbies.forEach(item=> { %>
-                    <article class="w-full flex items-center justify-between mb-10 bg-dark-gray p-4 rounded-2xl hover:scale-105 transition-all drop-shadow-card sm:w-[47%] lg:w-[30%]">
+                    <article
+                        class="w-full flex items-center justify-between mb-10 bg-dark-gray p-4 rounded-2xl hover:scale-105 transition-all drop-shadow-card sm:w-[47%] lg:w-[30%]">
                         <article class="w-1/5 text-3xl text-purple-about text-center">
                             <i class="<%= item.icon %>"></i>
                         </article>
